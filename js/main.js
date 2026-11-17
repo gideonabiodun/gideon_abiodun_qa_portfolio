@@ -78,7 +78,7 @@
     const inner = `<i class="fa-solid ${d.icon}" aria-hidden="true"></i><h3>${esc(d.name)}</h3><p>${txt(d.description)}</p>`;
     return d.file
       ? `<a class="doc" href="${esc(d.file)}" target="_blank" rel="noopener noreferrer">${inner}<span class="more">Open sample</span></a>`
-      : `<div class="doc empty">${inner}<a class="more muted" href="#">Sample coming soon</a></div>`;
+      : `<div class="doc empty">${inner}<a class="more muted" href="#">Preview</a></div>`;
   }).join("");
 
   // Credentials
