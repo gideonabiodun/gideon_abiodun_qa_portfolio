@@ -29,3 +29,4 @@ Text starting with `[` is a placeholder. Set `showPlaceholders: false` in `conte
 `_archive/old-site/` holds the original web-design site and is not used. Delete it when you are happy.
 # Gideon-Abiodun-QA-Portfolio
 # Gideon-Abiodun-QA-Portfolio
+# gideon_abiodun_qa_portfolio
