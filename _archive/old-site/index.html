@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gideon Abiodun</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/x-icon" href="./images/Gideon (2).jpg">
+    <script src="https://kit.fontawesome.com/9ab3cbb969.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="./index.html"><h2 class="logo"><span class="abi">Gi</span>deon.</h2></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portifolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h4 class="hello">Hi there, 👋</h4>
+                <h1 class="gideon"> <span class="auto-input" id="abi"></span></h1>
+                <button id="buttn" type="button"><a href="#contact">Hire Me</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Gideon (2).jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p class="about-content">
+                        Results-oriented, extremely creative, and results-driven web designer 
+                        with three (3) years plus of expertise in creating interesting, 
+                        user-friendly websites using wordpress, wix Websites, among others. 
+                        <a class="cta" href="#contact">Hire Me 😎</a>    
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML | CSS | JavaScript | SASS | Tailwind | Bootstrap</li>
+                            <li><span>Website Design </span><br>WordPress | Wix Websites | Webflow | Systeme.io | Carrd.co</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Crestmark Tech: Web Developer<br>
+                            Developed websites using HTML | CSS | SASS | Tailwind | Bootstrap | JavaScript etc </li>
+                            <li><span>January 2023 - June 2023</span><br>Jai Forte: Web Design & Development “Wix Website” <br>
+                            Designed and maintained client Wix websites; designed graphics using "Canva" for client</li>
+                            <li><span>2021 - present</span><br>Freelancer: Web Design “WordPress | Wix | Systeme.io” <br>
+                            Designed and maintained clients websites using WordPress, Systeme among others.</li>
+                        </ul >
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Babcock University Ilishan Remo <br> B.sc Computer Science</li>
+                            <li><span>2018-2021</span><br>Kwara State Polytechnic, Ilorin <br>
+                            HND Physics and Electronics </li>
+                            <li><span>2015-2017</span><br>Kwara State Polytechnic, Ilorin <br>
+                            ND Science Laboratory Technology  </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">
+                My Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web <br> Development</h2>
+                    <p>Every website should be built with two primary goals: 
+                        Firstly, it needs to work across all devices. 
+                        Secondly, it needs to be fast as possible.</p>
+                    <a href="#contact">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2 class="cms">Web <br> Design (CMS)</h2>
+                    <p>Building high-impact websites that captivate your audience 
+                        using WordPress, Wix, and other top CMS platforms.</p>
+                    <a href="#contact">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-pen-to-square"></i> 
+                    <h2>Website Maintenance</h2>
+                    <p>You already have a website, and you think it is all that you need. 
+                        Wrong. We'll keep your website fresh, trendy, and updated.</p>
+                    <a href="#contact">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfoilio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+            <div class="work">
+                <img src="https://res.cloudinary.com/dwfkgwd5a/image/upload/v1746446703/Queens_mockups_aqcfiu.png" alt="">
+                            
+                <div class="layer">
+                    <h3>Queens Yumyum: Bringing you an unforgettable dining experience with every dish.</h3>
+                    <p>The app allow easy order of any kind of dish in Abuja.<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://queensyumyum.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1723215589/2_c6zjlo.png" alt="">
+            
+                <div class="layer">
+                    <h3>E-Commerce Website With Payment Integration</h3>
+                    <p>Online store with seamless checkout and multiple payment options.<br><br>  
+                        Click to view here.
+                    </p>
+                    <a href="https://wears.rwellingtonltd.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+             <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1723215592/3_vd0h9g.png" alt="rwellingtonltd farms">
+            
+                <div class="layer">
+                    <h3>Real Estate Website With Payment Integration</h3>
+                    <p>A property listing platform with online booking and secure payment processing.<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://farms.rwellingtonltd.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+                <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1723215591/4_uybxbu.png" alt="rwellingtonltd estates">
+            
+                <div class="layer">
+                    <h3>Commercial Farm Website With Payment Integration</h3>
+                    <p>A platform for farm product sales with secure payment gateway.<br><br>  
+                        Click to view here.
+                    </p>
+                    <a href="https://estates.rwellingtonltd.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+                <div class="work">
+                <img src="https://res.cloudinary.com/dwfkgwd5a/image/upload/v1747779958/Cozy_Corner_sfhm0i.png" alt="rwellingtonltd estates">
+            
+                <div class="layer">
+                    <h3>Appartment Booking App</h3>
+                    <p>A platform for apartment booking integrated to airbnb.<br><br>  
+                        Click to view here.
+                    </p>
+                    <a href="https://spiffycozycorner.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+
+           <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1723218899/5_nzengv.png" alt="rwellingtonltd website">
+            <div class="layer">
+                <h3>Business Group Website With Various Sub-Businesses</h3>
+                <p>A website showcasing multiple business divisions and their offerings.<br><br>
+                    Click to view here.
+                </p>
+                <a href="https://rwellingtonltd.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+
+             <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1723220400/6_csmpeg.png" alt="">
+            
+                <div class="layer">
+                    <h3>Personal Portfoilio website</h3>
+                    <p>The website showcase skills and projects done.<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://gideonabiodun.com.ng" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+                     <div class="work">
+                <img src="https://res.cloudinary.com/dwfkgwd5a/image/upload/v1746448967/Drippy_Mockup_k53twd.png" alt="">
+                            
+                <div class="layer">
+                    <h3>Drippy Nigeria: Shop our collection of high-quality watches, jewelry, and accessories.</h3>
+                    <p>Online store with seamless checkout and multiple payment options.<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://drippynigeria.com.ng/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="https://res.cloudinary.com/dvywtssas/image/upload/v1720702765/LagHot_ndagl4.png" alt="">
+            
+                <div class="layer">
+                    <h3>Lagos Hotels: Find and Book Hotels in Lagos</h3>
+                    <p>The app allow easy reservations of hotels in Lagos.<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://lagoshotels.ng/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+                            <div class="work">
+                <img src="./images/QUOTEGEN.jpg" alt="">
+            
+                <div class="layer">
+                    <h3>Quote Generator App</h3>
+                    <p>The app generate quotes randomly from different
+                        authors. And the quotes generated can be shared 
+                        directly to twitter (X).<br><br>  
+                        Click to view here.
+                    </p>
+                    <a href="https://tourmaline-bonbon-0e7146.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+                         <div class="work">
+                <img src="./images/QRCODE.jpg" alt="">
+            
+                <div class="layer">
+                    <h3>QR Code Generator App</h3>
+                    <p>The app allows you to generate QR code
+                        for any url or webpage. Just enter your
+                        URL and click 'Generate', your QR code is ready<br><br> 
+                        Click to view here.
+                    </p>
+                    <a href="https://sensational-mandazi-9f2223.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+                     <div class="work">
+                <img src="./images/QuZA.jpg" alt="">
+            <div class="layer">
+                <h3>Quiz App</h3>
+                <p>The app contains series of questions for users
+                    to take, and the answer is display after the last question. <br><br>
+                    Click to view here.
+                </p>
+                <a href="https://incredible-nougat-8f4c84.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>            
+
+        </div>
+        <a href="https://github.com/gideonabiodun?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+  <!-- Contact Me -->
+
+    <div class="contact-me">
+        <p class="contact-para">Let Me Get You A Beautiful Website Today.</p>
+        <a class="button-two" href="https://wa.me/+2347062119352" target="_blank">Hire Me</a>
+    </div>
+
+    <!-- Blog -->
+
+    
+    <div class="blog">
+        <section id="blog">
+  <h2>Latest Blog Posts</h2>
+  <div id="posts"></div>
+</section>
+
+    </div>
+
+<!-- Contact form -->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i><a href="mailto:gideonabiodun02@gmail.com">Send Me An Email</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+2347062119352">+234 706 211 9352</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/gideonabiodun01" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gideonabiodun01/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/+2347062119352" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/@gideonabiodun" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="./images/Gideon Abiodun WWD CV.pdf" target="" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="Message" rows="6" cols="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <!-- <a href="https://wa.me/+2347062119352" target="_blank" class="btn btn2">Submit</a> -->
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <div class="copyright">
+       <p>&#169 Gideon Abiodun || 2024</p> 
+    </div>
+</div>
+
+<!-- Script -->
+    <script src="blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

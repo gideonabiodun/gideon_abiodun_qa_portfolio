@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gideon Abiodun | QA Lead and Software Quality Assurance Engineer</title>
+  <meta name="description" content="Gideon Abiodun is a QA Lead and Software Quality Assurance Engineer with 5+ years of experience in FinTech, procurement, and ecommerce: team leadership, API testing, automation, and end-to-end QA.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gideon Abiodun | QA Lead and Software Quality Assurance Engineer">
+  <meta property="og:description" content="QA leadership, test strategy, API testing, automation, and end-to-end quality assurance across FinTech, procurement, and ecommerce.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/GideonAbiodunPortrait.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Gideon Abiodun, home"><span class="abi">Gi</span>deon.</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button>
+      <nav id="nav" aria-label="Main">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">QA projects</a>
+        <a href="#documentation">Documentation</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-text">
+        <p class="hello">Hi there, 👋</p>
+        <h1 class="gideon"><span class="auto-input" id="heroName">Gideon Abiodun</span></h1>
+        <p class="role" id="heroTitle"></p>
+        <p class="tagline" id="heroTagline"></p>
+        <p class="intro" id="heroIntro"></p>
+        <div class="cta-row">
+          <a class="btn primary" href="#experience">Explore my experience</a>
+          <a class="btn" href="#projects">View QA projects</a>
+          <a class="btn" id="cvBtn" href="#" download><i class="fa-solid fa-download"></i> Download my CV</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <img id="aboutPhoto" class="photo" width="320" height="430" alt="">
+        <div>
+          <h2 class="sub-title">About</h2>
+          <div id="aboutText" class="prose"></div>
+        </div>
+      </div>
+      <div class="wrap"><dl class="stats" id="stats"></dl></div>
+    </section>
+
+    <section id="experience" class="section alt"><div class="wrap"><h2 class="sub-title">Professional experience</h2><div class="timeline" id="timeline"></div><div id="otherExp"></div></div></section>
+    <section id="skills" class="section"><div class="wrap"><h2 class="sub-title">Core skills and tools</h2><div class="skill-grid" id="skillGrid"></div></div></section>
+
+    <section id="achievements" class="section alt"><div class="wrap">
+      <h2 class="sub-title">Achievements and recognition</h2>
+      <div class="ach-grid"><div class="award" id="award"></div><ul class="ach-list" id="achList"></ul></div>
+    </div></section>
+
+    <section id="projects" class="section"><div class="wrap"><h2 class="sub-title">QA projects and testing experience</h2>
+      <p class="lede">What I tested, how I approached it, and the tools I used. Confidential details are left out on purpose.</p>
+      <div class="proj-grid" id="projGrid"></div></div></section>
+
+    <section id="documentation" class="section alt"><div class="wrap"><h2 class="sub-title">QA documentation showcase</h2>
+      <p class="lede">Sanitised samples of the deliverables I produce.</p>
+      <div class="doc-grid" id="docGrid"></div></div></section>
+
+    <section id="credentials" class="section"><div class="wrap">
+      <h2 class="sub-title">Certifications and education</h2>
+      <div class="cred-grid"><div><h3>Certifications</h3><ul class="cred" id="certList"></ul></div><div><h3>Education</h3><ul class="cred" id="eduList"></ul></div></div>
+      <div class="web-bg" id="webBg"></div>
+    </div></section>
+
+    <section id="contact" class="section alt"><div class="wrap contact-grid">
+      <div>
+        <h2 class="sub-title">Contact</h2>
+        <p class="lede">Hiring for a QA Lead or Senior QA role? Send a message.</p>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+      <form id="contactForm" novalidate>
+        <label for="cName">Name</label><input id="cName" name="Name" type="text" autocomplete="name" required>
+        <label for="cEmail">Email</label><input id="cEmail" name="Email" type="email" autocomplete="email" required>
+        <label for="cMsg">Message</label><textarea id="cMsg" name="Message" rows="5" required></textarea>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© <span id="footYear"></span> Gideon Abiodun</p></div></footer>
+
+  <noscript><p class="wrap" style="padding:2rem">Gideon Abiodun: QA Lead and Software Quality Assurance Engineer. Please enable JavaScript to view the full portfolio, or email gideonabiodun02@gmail.com.</p></noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
