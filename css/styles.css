@@ -2,9 +2,9 @@
 :root {
   --bg: #080808; --alt: #111111; --surface: #000000; --panel: #262626; --band: #191919;
   --ink: #ffffff; --text: #ababab; --muted: #838181; --line: #333333;
-  --accent: #ff004f; --accent-2: #f9004d; --soft: #b54769;
+  --accent: #a41634; --accent-2: #a41636; --soft: #9d2543;
   --warn: #f2b26b; --warn-bg: #2b2113;
-  --sans: sans-serif; --r: 6px; --w: 1120px;
+  --sans: Times; --r: 6px; --w: 1120px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--sans); }
 html { scroll-behavior: smooth; scroll-padding-top: 70px; }
@@ -27,14 +27,14 @@ nav { display: flex; gap: 1.5rem; align-items: center; }
 nav a { color: #fff; font-size: 1rem; position: relative; }
 nav a::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 3px; background: var(--accent); transition: .5s; }
 nav a:hover::after { width: 100%; }
-nav .nav-cta { border: 1px solid var(--accent); padding: .35rem 1rem; border-radius: 5px; }
+nav .nav-cta { border: 1px solid var(--accent); background-color: var(--accent); padding: .35rem 1rem; border-radius: 5px; }
 nav .nav-cta::after { display: none; }
 nav .nav-cta:hover { background: var(--accent); }
 .menu-btn { display: none; background: none; border: 0; color: #fff; width: 42px; height: 42px; cursor: pointer; position: relative; z-index: 12; }
 
 /* Hero: original photo, dark overlay, typed heading */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 0 60px;
-  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(../assets/img/hero.jpg) center / cover; background-attachment: fixed; }
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0,0,0,5)), url(../assets/img/GideonAbiodunPortrait.jpg) top / cover; background-attachment: fixed; background-repeat: no-repeat; }
 .hello { color: var(--muted); letter-spacing: 2px; font-size: 1.1rem; }
 .gideon { color: #fff; font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.1; margin: 1.2rem 0; min-height: 2.2em; }
 .gideon span { font-family: inherit; }

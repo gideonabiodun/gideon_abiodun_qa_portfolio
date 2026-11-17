@@ -1,16 +1,11 @@
-/* ============================================================
-   CONTENT FILE — edit this file to update the whole website.
-   Any text starting with "[" is a PLACEHOLDER (shown dashed).
-   Set showPlaceholders to false to hide all placeholders.
-   ============================================================ */
 const SITE = {
   showPlaceholders: true,
 
   person: {
     name: "Gideon Abiodun",
-    title: "Software Quality Assurance Engineer",
-    tagline: "Building reliable software through strategic testing, effective QA leadership, and quality-driven engineering practices.",
-    intro: "Over 5 years of experience in software quality assurance across FinTech, procurement, and ecommerce platforms, with expertise in team leadership, manual testing, API testing, automation, and end-to-end quality assurance.",
+    // title: "TEST.ASSURE.DELIVER",
+    tagline: "TEST.ASSURE.DELIVER",
+    intro: "Over 5 years of experience in software quality assurance across FinTech, Procurement, Agriculture, Healthcare, and E-commerce platforms, with expertise in team leadership, manual testing, API testing, automation, and end-to-end quality assurance.",
     location: "Lagos, Nigeria",
     photo: "assets/img/GideonAbiodunPortrait.jpg",
     photoAlt: "Portrait of Gideon Abiodun"
@@ -23,7 +18,7 @@ const SITE = {
     github: "https://github.com/gideonabiodun",
     linkedin: "https://www.linkedin.com/in/gideonabiodun01/",               
     whatsapp: "https://wa.me/2347062119352",
-    cv: "assets/cv/Gideon_Abiodun_CV.pdf",
+    cv: "assets/cv/Gideon.Abiodun.CV.pdf",
     // Google Apps Script endpoint used by the contact form (from the original site)
     formEndpoint: "https://script.google.com/macros/s/AKfycbxUPMRJg4cgYNaPxGCBhMYySkEQrtnToaUdGHsmpRmtEUHDLJ9T0_tGsZiFw4kRUQ-ubA/exec"
   },
@@ -70,7 +65,7 @@ const SITE = {
       period: "May 2026 – November 2026",
       summary: "Full-stack QA across both the Admin Portal and the Customer Portal of an ecommerce platform.",
       bullets: [
-        "Designed and executed over 240 test cases across AltMall's Admin and Customer platforms, covering critical ecommerce workflows and business requirements.",
+        "Designed and executed over 500 test cases across AltMall's Admin and Customer platforms, covering critical ecommerce workflows and business requirements.",
         "Tested frontend and backend on both portals: UI behaviour, API responses, business logic, data integrity, and system functionality.",
         "Performed integration testing across interconnected services, APIs, and third-party systems."     
       ],
@@ -103,12 +98,12 @@ const SITE = {
   otherExperience: [],
 
   skills: [
-    { icon: "fa-people-group", name: "QA leadership and management", items: ["QA team leadership", "Team coordination", "Mentorship and coaching", "QA process development", "Testing standards and best practices", "Test strategy development", "Quality reporting", "Risk-based testing"] },
+    { icon: "fa-people-group", name: "QA leadership and management", items: ["QA team leadership", "Team coordination", "Quality reporting", "Mentorship and coaching", "Risk-based testing", "QA process development",  "Testing standards and best practices", "Test strategy development"] },
     { icon: "fa-clipboard-check", name: "Manual testing", items: ["Functional", "Regression", "Smoke", "Sanity", "Integration", "System", "End-to-end", "Exploratory", "Cross-browser", "Responsive", "Usability", "User acceptance"] },
     { icon: "fa-robot", name: "Automation testing", items: ["Playwright", "Cypress", "JavaScript", "TypeScript", "Page Object Model", "Automated regression", "Test data management", "Authentication and session management"] },
-    { icon: "fa-plug", name: "API and backend testing", items: ["Postman", "Swagger / OpenAPI", "Bruno", "REST API testing", "Request and response validation", "Authentication and authorisation", "Status codes", "Negative testing", "Business logic validation", "API integration testing"] },
+    { icon: "fa-plug", name: "API and backend testing", items: ["Postman", "Swagger / OpenAPI", "Bruno", "REST API testing", "Negative testing", "Request and response validation", "Status codes", "Authentication and authorisation", "Business logic validation", "API integration testing"] },
     { icon: "fa-mobile-screen", name: "Web and mobile testing", items: ["Frontend testing", "Backend testing", "Android app testing", "iOS app testing", "Cross-device testing", "Mobile compatibility", "UI/UX validation"] },
-    { icon: "fa-file-lines", name: "QA process and documentation", items: ["Test planning", "Test case design", "Test execution", "Defect lifecycle management", "Requirements analysis", "Requirements traceability", "Test reporting", "Bug documentation", "Agile / Scrum"] },
+    { icon: "fa-file-lines", name: "QA process and documentation", items: ["Test planning", "Test case design", "Test execution", "Defect lifecycle management", "Requirements analysis", "Agile / Scrum", "Requirements traceability", "Test reporting", "Bug documentation"] },
     { icon: "fa-screwdriver-wrench", name: "Tools and collaboration", items: ["Jira", "Confluence", "ClickUp", "Git", "GitHub", "VS Code", "Slack", "Microsoft Teams", "Figma", "Google Workspace", "Loom"] }
   ],
 
@@ -120,7 +115,7 @@ const SITE = {
     items: [
       "Tested and contributed to the successful release of 10+ production applications across FinTech, procurement, and ecommerce.",
       "Designed over 1,227 test cases across 21 modules for the NCDMB procurement platform.",
-      "Designed over 240 test cases across AltMall's Admin and Customer platforms.",
+      "Designed over 500 test cases across AltMall's Admin and Customer platforms.",
       "Lead and manage four QA engineers and interns at Famous Holdings.",
       "Introduced structured QA processes, standards, and tools that improved collaboration between development and QA.",
       "Validated critical payment workflows and third-party integrations."
@@ -129,18 +124,18 @@ const SITE = {
 
   projects: [
     {
-      name: "AltMall", category: "Ecommerce platform", type: "Web: Admin Portal and Customer Portal",
-      scope: "Two portals, tested separately and end to end. Admin Portal: frontend, backend, and integration testing. Customer Portal: frontend, backend, and integration testing.",
-      approach: "Comprehensive, risk-based testing with positive, negative, boundary, and edge-case scenarios.",
-      tools: ["Postman", "Swagger", "Jira"],
-      activities: ["240+ test cases designed and executed", "Customer, vendor, catalogue, order, payment, and return workflows", "RBAC, KYB, Pay Now, Save to Own, and BNPL validation", "Regression testing of fixes"]
-    },
-    {
       name: "NCDMB procurement platform", category: "Government procurement", type: "Web: Procurement, Vendor, and Directorate portals",
       scope: "Three portals across 21 modules, tested against the product requirements document.",
       approach: "Requirements-based test design, live API testing, and structured defect reporting.",
       tools: ["Postman", "Excel", "Markdown bug reports"],
       activities: ["1,227+ test case master suite", "Authentication, user management, and RBAC API tests", "Purchase order validation debugging", "API handoff documentation review"]
+    },
+    {
+      name: "AltMall", category: "Ecommerce platform", type: "Web: Admin Portal and Customer Portal",
+      scope: "Two portals, tested separately and end to end. Admin Portal: frontend, backend, and integration testing. Customer Portal: frontend, backend, and integration testing.",
+      approach: "Comprehensive, risk-based testing with positive, negative, boundary, and edge-case scenarios.",
+      tools: ["Postman", "Swagger", "Jira"],
+      activities: ["500+ test cases designed and executed", "Customer, vendor, catalogue, order, payment, and return workflows", "RBAC, KYB, Pay Now, Save to Own, and BNPL validation", "Regression testing of fixes"]
     },
     {
       name: "FinTech applications", category: "FinTech", type: "Web and mobile",
@@ -185,7 +180,7 @@ const SITE = {
 
   certifications: [
     { name: "Introduction to Playwright", issuer: "TestAutomationU", date: "September 2025" },
-    { name: "Programming Foundations: Software Testing/QA", issuer: "LinkedIn Learning", date: "August 2024" },   // CV says "20224": confirm
+    { name: "Programming Foundations: Software Testing/QA", issuer: "LinkedIn Learning", date: "August 2024" },  
     { name: "Software Testing Automation Internship Program", issuer: "Edureka!", date: "March 2024" },
     { name: "Software Testing Tutorial", issuer: "Great Learning Academy", date: "March 2024" }
   ],
